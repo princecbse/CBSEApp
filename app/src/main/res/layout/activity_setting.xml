@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/main_li"
+    tools:context=".SettingActivity">
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#1b88f5"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="CMTM-C"
+                    android:textColor="#ffffff"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="#FFFFFF"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="Confidential Material Tracking And Monitoring For Custodian"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/seting"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Close"
+                    android:textColor="#ffffff"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/head"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/heading1"
+                    android:layout_width="match_parent"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:text="Select Font Size"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+                <RadioButton
+                    android:id="@+id/small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small"
+                    android:checked="false"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medium"
+                    android:checked="false"
+                    android:textSize="16sp" />
+                <RadioButton
+                    android:id="@+id/large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Large"
+                    android:checked="false"
+                    android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/heading2"
+                    android:layout_width="match_parent"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:text="Select Theme"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="#BF0dbfe7"
+                        android:layout_margin="@dimen/_5sdp"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Normal"
+                        android:checked="false"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                >
+              <ImageView
+                  android:layout_width="@dimen/_50sdp"
+                  android:layout_height="@dimen/_50sdp"
+                  android:src="#000"
+                  android:layout_margin="@dimen/_5sdp"
+
+                  />
+
+                <RadioButton
+                    android:id="@+id/dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dark"
+                    android:checked="false"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_fb"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:src="@drawable/ic_facebook"
+
+                    android:layout_margin="@dimen/_5sdp"
+                    />
+                <ImageView
+                    android:id="@+id/img_insta"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:src="@drawable/ic_insta"
+
+                    android:layout_margin="@dimen/_5sdp"
+                    />
+                <ImageView
+                    android:id="@+id/img_tw"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:src="@drawable/ic_twitter"
+
+                    android:layout_margin="@dimen/_5sdp"
+                    />
+                <ImageView
+                    android:id="@+id/img_yt"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:src="@drawable/ic_youtube"
+                    android:layout_margin="@dimen/_5sdp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/link1"
+                    android:layout_width="match_parent"
+                    android:textColor="#3F51B5"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="FAQ"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/link2"
+                    android:layout_width="match_parent"
+                    android:textColor="#3F51B5"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Contact Us"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/gov_link"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/link3"
+                    android:layout_width="match_parent"
+                    android:textColor="#3F51B5"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="https://www.india.gov.in/"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

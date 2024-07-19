@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CMTM-C</string>
+    <string name="enter_registered_mobile_number">Enter registered mobile number</string>
+    <string name="cbse">Central Board of Secondary Education</string>
+    <string name="cmtm_full_name">Confidential Material Tracking And Monitoring For Custodian</string>
+    <string name="submit">Submit</string>
+</resources>

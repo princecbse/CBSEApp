@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
+    android:id="@+id/back"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/sc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ln1"
+            android:layout_weight="9"
+            android:orientation="vertical">
+         <!--   <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="#11cfec">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="CMTM-C "
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="#1b88f5"
+                android:layout_height="@dimen/_46sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="@string/app_name"
+                            android:textColor="#ffffff"
+                            android:gravity="start"
+                            android:textStyle="bold"
+                            android:fontFamily="serif"
+                            android:textSize="@dimen/_15sdp"
+                            android:layout_weight="1"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="@dimen/_5sdp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textColor="#FFFFFF"
+                            android:gravity="start"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_8sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="@string/cmtm_full_name"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/seting"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="end"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="center"
+                            android:src="@drawable/setting"
+                            app:tint="@color/white" />
+                        <!-- <TextView
+                             android:layout_width="match_parent"
+                             android:text="Setting"
+                             android:textColor="#ffffff"
+                             android:gravity="right"
+                             android:textStyle="bold"
+                             android:fontFamily="serif"
+                             android:textSize="@dimen/_10sdp"
+                             android:layout_weight="1"
+                             android:layout_marginRight="@dimen/_5sdp"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="@dimen/_5sdp"
+                             />-->
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="@dimen/_6sdp">
+                <LinearLayout
+                    android:id="@+id/back1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    >
+                <TextView
+                    android:id="@+id/txt_note"
+                    android:layout_width="match_parent"
+                    android:text="Note :  For every step first take selfie then take picture"
+                    android:textColor="#e71717"
+                    android:gravity="left"
+                    android:textSize="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3.90"
+                        android:padding="@dimen/_5sdp"
+                        android:weightSum="2.40">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_weight=".60"
+                            android:orientation="vertical"
+                            android:weightSum="6">
+
+                            <TextView
+                                android:id="@+id/l1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:text="Lot1"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <TextView
+                                android:id="@+id/l2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:gravity="left"
+                                android:text="Lot2"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <TextView
+                                android:id="@+id/l3"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:gravity="left"
+                                android:text="Lot3"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <TextView
+                                android:id="@+id/l4"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:text="Lot4"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <TextView
+                                android:id="@+id/l5"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="Lot5"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_10sdp" />
+                            <TextView
+                                android:id="@+id/l6"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="Lot6"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/_10sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_weight="1.40"
+                            android:orientation="vertical"
+                            android:weightSum="6">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/btn1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_19sdp"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:background="@drawable/rounded_gray_button"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Take Selfie for lot1 "
+                                    android:textColor="#ffffff"
+                                    android:textSize="@dimen/_7sdp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+                                    <Button
+                                        android:id="@+id/btnrecive"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/_19sdp"
+                                        android:background="@drawable/rounded_gray_button"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="Take Picture for lot1 "
+                                        android:textColor="#ffffff"
+                                        android:textSize="@dimen/_7sdp" />
+
+                                    <TextView
+                                        android:id="@+id/tv1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/imgok"
+                                        android:gravity="center"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/btn2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_19sdp"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:background="@drawable/rounded_gray_button"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Take Selfie for lot2 "
+                                    android:textColor="#ffffff"
+                                    android:textSize="@dimen/_7sdp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/btninspection"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/_19sdp"
+                                        android:background="@drawable/rounded_gray_button"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="Take Picture for lot2"
+                                        android:textColor="#ffffff"
+                                        android:textSize="@dimen/_7sdp" />
+
+                                    <TextView
+                                        android:id="@+id/tv2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/imgok"
+                                        android:gravity="center"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/btn3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_19sdp"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:background="@drawable/rounded_gray_button"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Take Selfie for lot3 "
+                                    android:textColor="#ffffff"
+                                    android:textSize="@dimen/_7sdp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <Button
+                                        android:id="@+id/btnopen"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/_19sdp"
+                                        android:background="@drawable/rounded_gray_button"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="Take Picture for lot3"
+                                        android:textColor="#ffffff"
+                                        android:textSize="@dimen/_7sdp" />
+
+                                    <TextView
+                                        android:id="@+id/tv3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/imgok"
+                                        android:gravity="center"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:orientation="vertical">
+                                <Button
+                                    android:id="@+id/btn4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_19sdp"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:background="@drawable/rounded_gray_button"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Take Selfie for lot4 "
+                                    android:textColor="#ffffff"
+                                    android:textSize="@dimen/_7sdp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                <Button
+                                    android:id="@+id/btnhandover"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_19sdp"
+                                    android:background="@drawable/rounded_gray_button"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Take Picture for lot4"
+                                    android:textColor="#ffffff"
+                                    android:textSize="@dimen/_7sdp" />
+
+                                <TextView
+                                    android:id="@+id/tv4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/imgok"
+                                    android:gravity="center"
+                                    android:visibility="invisible" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:orientation="vertical">
+                                <Button
+                                    android:id="@+id/btn5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_19sdp"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:background="@drawable/rounded_gray_button"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Take Selfie for lot5 "
+                                    android:textColor="#ffffff"
+                                    android:textSize="@dimen/_7sdp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                <Button
+                                    android:id="@+id/btnhandover2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_19sdp"
+                                    android:background="@drawable/rounded_gray_button"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Take Picture for lot5"
+                                    android:textColor="#ffffff"
+                                    android:textSize="@dimen/_7sdp" />
+
+                                <TextView
+                                    android:id="@+id/tv5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/imgok"
+                                    android:gravity="center"
+                                    android:visibility="invisible" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:orientation="vertical">
+                                <Button
+                                    android:id="@+id/btn6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_19sdp"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:background="@drawable/rounded_gray_button"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Take Selfie for lot6 "
+                                    android:textColor="#ffffff"
+                                    android:textSize="@dimen/_7sdp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                <Button
+                                    android:id="@+id/btnhandover3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_19sdp"
+                                    android:background="@drawable/rounded_gray_button"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="Take Picture for lot6"
+                                    android:textColor="#ffffff"
+                                    android:textSize="@dimen/_7sdp" />
+                                <TextView
+                                    android:id="@+id/tv6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/imgok"
+                                    android:gravity="center"
+                                    android:visibility="invisible" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/_2sdp"
+                            android:layout_weight=".40"
+                            android:gravity="right"
+                            android:orientation="vertical"
+                            android:weightSum="6"
+                            tools:context="net.igenius.customcheckboxdemo.MainActivity">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <net.igenius.customcheckbox.CustomCheckBox
+                                    android:id="@+id/scb1"
+                                    android:layout_width="@dimen/_27sdp"
+                                    android:layout_height="@dimen/_27sdp"
+                                    android:enabled="false"
+                                    app:color_checked="@color/colorPrimary"
+                                    app:color_tick="@android:color/white"
+                                    app:color_unchecked_stroke="@color/colorAccent"
+                                    app:small_tick="true" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <net.igenius.customcheckbox.CustomCheckBox
+                                    android:id="@+id/scb2"
+                                    android:layout_width="@dimen/_27sdp"
+                                    android:layout_height="@dimen/_27sdp"
+                                    android:layout_weight="1"
+                                    android:enabled="false"
+                                    app:color_checked="@color/colorPrimary"
+                                    app:color_tick="@android:color/white"
+                                    app:color_unchecked_stroke="@color/colorAccent"
+                                    app:small_tick="true" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <net.igenius.customcheckbox.CustomCheckBox
+                                    android:id="@+id/scb3"
+                                    android:layout_width="@dimen/_27sdp"
+                                    android:layout_height="@dimen/_27sdp"
+                                    android:enabled="false"
+                                    app:color_checked="@color/colorPrimary"
+                                    app:color_tick="@android:color/white"
+                                    app:color_unchecked_stroke="@color/colorAccent"
+                                    app:small_tick="true" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <net.igenius.customcheckbox.CustomCheckBox
+                                    android:id="@+id/scb4"
+                                    android:layout_width="@dimen/_27sdp"
+                                    android:layout_height="@dimen/_27sdp"
+                                    android:enabled="false"
+                                    app:color_checked="@color/colorPrimary"
+                                    app:color_tick="@android:color/white"
+                                    app:color_unchecked_stroke="@color/colorAccent"
+                                    app:small_tick="true" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <net.igenius.customcheckbox.CustomCheckBox
+                                    android:id="@+id/scb5"
+                                    android:layout_width="@dimen/_27sdp"
+                                    android:layout_height="@dimen/_27sdp"
+                                    android:enabled="false"
+                                    app:color_checked="@color/colorPrimary"
+                                    app:color_tick="@android:color/white"
+                                    app:color_unchecked_stroke="@color/colorAccent"
+                                    app:small_tick="true" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <net.igenius.customcheckbox.CustomCheckBox
+                                    android:id="@+id/scb6"
+                                    android:layout_width="@dimen/_27sdp"
+                                    android:layout_height="@dimen/_27sdp"
+                                    android:enabled="false"
+                                    app:color_checked="@color/colorPrimary"
+                                    app:color_tick="@android:color/white"
+                                    app:color_unchecked_stroke="@color/colorAccent"
+                                    app:small_tick="true" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:layout_weight="1.70"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edNofofArtical"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="@drawable/rounded_edittext"
+                            android:drawableRight="@drawable/payment"
+                            android:gravity="center"
+                            android:hint="Enter total no of sealed Bags"
+                            android:numeric="integer"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_2sdp"
+                            android:orientation="horizontal"
+                            android:weightSum="2.50">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".50"
+                                android:text=" Series 1   "
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/series1bagfrom"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_25sdp"
+
+                                android:layout_marginRight="@dimen/_55sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rounded_edittext"
+                                android:gravity="left"
+                                android:hint="Series 1"
+                                android:paddingLeft="@dimen/_20sdp"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <EditText
+                                android:id="@+id/series1bagto"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rounded_edittext"
+                                android:gravity="center"
+                                android:hint="Bag Serial To"
+                                android:textSize="@dimen/_10sdp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_2sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:orientation="horizontal"
+                            android:weightSum="2.50">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".50"
+                                android:text="Series 2    "
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/series2bagfrom"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_marginRight="@dimen/_55sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rounded_edittext"
+                                android:gravity="left"
+                                android:hint="Series 2"
+                                android:paddingLeft="@dimen/_20sdp"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <EditText
+                                android:id="@+id/series2bagto"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rounded_edittext"
+                                android:gravity="center"
+                                android:hint="Bag Serial To"
+                                android:textSize="@dimen/_10sdp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/edRemark"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="@drawable/rounded_edittext"
+                            android:drawableRight="@drawable/remark"
+                            android:gravity="center"
+                            android:hint="Remark"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_weight=".50"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvmessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:gravity="center"
+                            android:text="You have completed all steps successfully."
+                            android:textColor="#e70a0a"
+                            android:textSize="@dimen/_7sdp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btnEnter"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:background="@drawable/rounded_gray_button"
+                            android:text="SUBMIT"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+                </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

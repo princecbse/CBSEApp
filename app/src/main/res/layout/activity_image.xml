@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ImageActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="#32cdf4"
+            android:layout_height="@dimen/_40sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Image Preview"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textSize="@dimen/_15sdp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+             android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height=
+                "wrap_content">
+            <ImageView
+                android:layout_width="@dimen/_260sdp"
+                android:id="@+id/imgView"
+                android:scaleType="fitXY"
+                android:background="@drawable/imagebroder"
+                android:layout_height="@dimen/_300sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="@dimen/_50sdp"
+                android:text="OK"
+                android:layout_margin="@dimen/_6sdp"
+                android:textColor="#ffffff"
+                android:id="@+id/btnok"
+                 android:background="@drawable/rounded_gray_button"
+                android:layout_height="@dimen/_50sdp" />
+
+            <Button
+                android:layout_width="@dimen/_50sdp"
+                android:text="Cancel"
+                android:textColor="#ea1616"
+                android:id="@+id/btncancel"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="gone"
+                android:padding="@dimen/_3sdp"
+                android:layout_margin="@dimen/_6sdp"
+                android:background="@drawable/rounded_gray_button"
+                android:layout_height="@dimen/_50sdp" >
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
